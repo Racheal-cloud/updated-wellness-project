@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: #edfffd;
+} 
+section {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* styling the first div content */
+.first-div {
+    width: 460px;
+    height: 275px; 
+    margin-top: 8rem;
+}
+img {
+    width: 77.33px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+h3 {
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: 100px;
+}
+.desk-paragraph {
+    display: block;
+    color: #737373;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;   
+}
+.mob-paragraph{
+    display: none;
+}
+
+/* styling of inner-forms */
+
+form {
+    background-color: #ffffff;
+    padding: 1.5rem;
+}
+.name {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+} 
+
+ .third-div {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+}
+.units {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+} 
+label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+} 
+input,
+#dropdown {
+  width: 13rem;
+  height: 2.7rem;
+}    
+#activity,
+#password,
+button {
+  width: 29rem;
+  height: 48px;
+  margin-bottom: 25px;
+}
+.active-pass {
+    width: 33rem;
+    padding-left: 2rem;
+}
+  
+button {
+    color: white;
+    background-color: #2ec4b6;
+    border: none;
+}
+
+span, a {
+    /* font-family: Sofia Pro;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left; */
+    color: #2EC4B6;
+}
+.first-footer {
+    text-align: center;
+}
+.footer-mobile {
+    display: none;
+}
+
+/***********************MOBILEVIEW********************************/
+@media (max-width: 425px) {
+    section {
+      flex-direction: column;
+      padding: 2rem;
+      gap: 2rem;
+    }
+}
+
+.first-div {
+    width: 23rem;
+    margin-top: 4rem;
+  }
+form {
+    background-color: #ffffff;
+    padding: 1em;
+    width: 22rem;
+  }
+.desk-paragraph {
+    display: none;
+  }
+
+.mob-paragraph {
+    display: block;
+    width: 23rem;
+    color: #737373;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  input,
+  #dropdown {
+    width: 20rem;
+    height: 2.7rem;
+  }
+
+  .name,
+  .third-div,
+  .units {
+    flex-direction: column;
+  }
+  #activity,
+  #password,
+  button {
+    width: 20rem;
+    height: 48px;
+    margin-bottom: 25px;
+  }
+  .active-pass {
+    width: 20rem;
+    padding-left: 0;
+  }
+  .first-footer {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    font-size: 12gitpx;
+  }
+  
